@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "A blueprint for a Remittance Advice (RA) or Explanation of Benefits (EOB), which is a standard document sent by insurance companies to detail how a medical claim was processed showing breakdown of charges, what the insurance paid, any discounts and amount due",
+	"class": "Explanation of Benefits",
+  "type": "object",
+  "properties": {
+    "HospitalName": {
+      "type": "string",
+      "description": "Name of the hospital"
+    },
+    "PatientDetails": {
+      "type": "object",
+      "properties": {
+        "FirstName": {
+          "type": "string"
+        },
+        "LastName": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

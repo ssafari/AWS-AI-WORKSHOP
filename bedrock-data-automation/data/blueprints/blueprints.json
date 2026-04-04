@@ -1,0 +1,37 @@
+[
+    {
+        "name": "claim-form",
+        "description": "Blueprint for Medical Claim form CMS 1500",
+        "type": "DOCUMENT",
+        "stage": "LIVE",
+        "schema_path": "data/blueprints/claims_form.json"
+    },
+    {
+        "name": "hospital-discharge-report",
+        "description": "Blueprint for Hospital discharge summary report",
+        "type": "DOCUMENT",
+        "stage": "LIVE",
+        "schema_path": "data/blueprints//discharge_summary.json"
+    },
+    {
+        "name": "medical-transcription",
+        "description": " Medical Transcription",
+        "type": "DOCUMENT",
+        "stage": "LIVE",
+        "schema_path": "data/blueprints/medical_transcription.json"
+    },
+    {
+        "name": "lab-reports",
+        "description": " Lab Reports",
+        "type": "DOCUMENT",
+        "stage": "LIVE",
+        "schema_path": "data/blueprints/lab_reports.json"
+    },
+    {
+        "name": "patient-hospital-report",
+        "description": "Hospital medical summary report for a patient",
+        "type": "DOCUMENT",
+        "stage": "LIVE",
+        "schema_path": "data/blueprints/patient_schema.json"
+    }
+]
