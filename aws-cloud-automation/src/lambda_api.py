@@ -10,7 +10,6 @@ def zip_lambda_function_file(file_to_zip, zip_archive_name):
         return zip_archive_name
 
 def create_lambda_function(lambda_client, lambda_role_arn, func_name, file_path, func_file):
-    #function_name = 'DynamoCRUDHandler'
     try:
         with open(file_path, 'rb') as zip_file:
             zip_file_content = zip_file.read()
@@ -38,10 +37,10 @@ def create_lambda_function(lambda_client, lambda_role_arn, func_name, file_path,
     return None
 
 
-def add_lambda_permission(function_name, 
-                          service_arn, 
-                          statement_id, 
-                          lambda_client, 
+def add_lambda_permission(function_name,
+                          service_arn,
+                          statement_id,
+                          lambda_client,
                           principal_serivce):
     try:
         response = lambda_client.add_permission(

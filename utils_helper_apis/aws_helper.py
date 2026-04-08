@@ -90,7 +90,7 @@ def create_iam_role(role_policy, policy_doc, role_name, policy_name, role_desc):
 # AWS managed service cannot access user private data directly;
 # it must assume a role with specific s3:GetObject and s3:PutObject
 # permissions to read input data or save model outputs.
-# The IAM role serves as the mechanism for aws service to authenticate 
+# The IAM role serves as the mechanism for aws service to authenticate
 # with S3 securely.
 #
 # A service has permission to assume the IAM role, enabling 
